@@ -1,0 +1,70 @@
+# ============================================================
+#  research-qubo — .gitignore
+#  KEEP: src/ · experiments/*.py + experiments/LOG.md · docs/ ·
+#        README.md · requirements.txt   (paper/ — пока тоже в игноре)
+# ============================================================
+
+# --- Python окружения и кеши ---
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Служебное ассистента ---
+.claude/
+
+# --- Тяжёлые / сгенерированные / скачанные данные ---
+data/
+Gset/
+results/
+checkpoints/
+*.pkl
+*.qs
+*.tar.gz
+*.gz
+
+# --- Чужие репозитории и скачанные бенчмарки (DiffUCO, SATLIB, QOBLIB, OR-Library, ...) ---
+competitors/
+
+# --- Пакет отчёта по практике (передаётся отдельно) ---
+report/
+
+# --- PDF и тексты статей (вкл. статью научрука 15883_*, PI-GNN 2107.*, и пр.) ---
+*.pdf
+papers/
+experiments/_*.txt
+experiments/_orig_nb_code.py
+
+# --- Заметки, добавленные для ассистента (не часть репозитория) ---
+old_research.txt
+parsed_model_setting.txt
+practice_criteria.txt
+qubo_formulations.txt
+tasks.txt
+
+# --- Картинки ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# --- Тетрадки, добавленные вручную (не эксперименты) ---
+*.ipynb
+
+# --- LaTeX build-артефакты ---
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+
+# --- Моя статья (пока НЕ добавляем в репозиторий) ---
+paper/
+docs/PAPER.md
+docs/PAPER_DRAFT.md
+
+# --- Дайджест приватных заметок (derived from old_research.txt) ---
+docs/20_old_research_mined.md
