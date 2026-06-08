@@ -36,8 +36,37 @@ No training labels — the network optimizes directly on the instance.
 - `docs/` — research notes, literature reviews, SOTA comparison tables, per-problem analysis.
 
 Benchmarks (SATLIB, DiffUCO RB/BA generators, OR-Library, QOBLIB, Gset) and third-party repos are
-**downloaded separately** (not vendored); see `experiments/LOG.md` and `docs/` for exact sources and how
-each instance set is produced.
+**downloaded separately** (not vendored); see [experiments/LOG.md](experiments/LOG.md) and `docs/` for
+exact sources and how each instance set is produced.
+
+## Documentation — what to read
+
+**Start here**
+- [experiments/LOG.md](experiments/LOG.md) — full chronological experiment journal (every run, result, honest correction).
+- [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) — experiment index.
+- [docs/26_research_roadmap.md](docs/26_research_roadmap.md) — research roadmap.
+
+**General CO & SAT — SOTA comparison (the main results)**
+- [docs/30_sota_benchmarks.md](docs/30_sota_benchmarks.md) — SOTA benchmark tables + our standing (MDS / MaxClique / MVC / SK / MaxSAT).
+- [docs/29_benchmarking_on_their_metrics.md](docs/29_benchmarking_on_their_metrics.md) — comparing on competitors' own metrics.
+- [docs/27_sota_methodology_and_direct_comparison.md](docs/27_sota_methodology_and_direct_comparison.md) — methodology for direct, same-data comparison.
+- [docs/31_qubo_list_prioritized.md](docs/31_qubo_list_prioritized.md) — QUBO problems triaged by reproducibility/recency.
+- [docs/32_per_problem_litreview.md](docs/32_per_problem_litreview.md) — per-problem literature + which to compete on.
+
+**Literature reviews**
+- [docs/01_literature_review.md](docs/01_literature_review.md) · [docs/06_current_literature_2024-2026.md](docs/06_current_literature_2024-2026.md) · [docs/25_literature_2025_2026.md](docs/25_literature_2025_2026.md) — surveys (2024–2026).
+- [docs/02_references.md](docs/02_references.md) — references. · [docs/22_krylova_deep_read.md](docs/22_krylova_deep_read.md) — closest prior work (Krylova) deep-read.
+
+**Phase 1 — portfolio optimization (where the method's boundary was mapped)**
+- [docs/03_diagnosis.md](docs/03_diagnosis.md) — why the original notebook experiment was flawed.
+- [docs/04_experimental_plan.md](docs/04_experimental_plan.md) · [docs/05_results.md](docs/05_results.md) — plan + results.
+- [docs/07_benchmark_metrics_and_published_results.md](docs/07_benchmark_metrics_and_published_results.md) · [docs/08_comparison_results.md](docs/08_comparison_results.md) · [docs/10_extended_published_results.md](docs/10_extended_published_results.md) · [docs/18_master_comparison_tables.md](docs/18_master_comparison_tables.md) — metrics & published-number comparisons.
+- [docs/09_reproduction_original_method.md](docs/09_reproduction_original_method.md) — reproducing the original method (Gset).
+- [docs/11_alternative_formulations.md](docs/11_alternative_formulations.md) · [docs/16_new_datasets.md](docs/16_new_datasets.md) · [docs/17_new_problem_types.md](docs/17_new_problem_types.md) — formulations, datasets, problem variants.
+- [docs/12_recent_2025_2026_portfolio_optimization.md](docs/12_recent_2025_2026_portfolio_optimization.md) · [docs/13_backtest_results.md](docs/13_backtest_results.md) — recent portfolio lit + live backtest.
+- [docs/14_ablation_scaling_competitors.md](docs/14_ablation_scaling_competitors.md) · [docs/15_amortized_results.md](docs/15_amortized_results.md) · [docs/21_bigger_harder_tests.md](docs/21_bigger_harder_tests.md) — ablations, amortization (≈1000× speedup), scaling.
+- [docs/19_competitor_reproduction.md](docs/19_competitor_reproduction.md) · [docs/23_modern_ml_competitors_hard_class.md](docs/23_modern_ml_competitors_hard_class.md) · [docs/24_competitor_comparison_results.md](docs/24_competitor_comparison_results.md) — competitor reproduction & comparison (optimizer-vs-investor).
+- [docs/28_autonomous_loop_findings.md](docs/28_autonomous_loop_findings.md) — consolidated findings.
 
 ## Reproduce
 ```bash
