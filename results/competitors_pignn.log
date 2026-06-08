@@ -1,0 +1,30 @@
+=== port2 N=85 K=10 | QUBO energy (lower=better) ===
+Epoch: 0, Loss: 9.979830741882324
+Epoch: 1000, Loss: 0.02447977103292942
+Stopping early on epoch 1001 (patience: 100)
+GNN training (n=85) took 2.343
+GNN final continuous loss: 0.024413689970970154
+GNN best continuous loss: 0.0
+  amazon PI-GNN    energy=0.60286  |S|=0 (K=10)  t=2.3s
+Epoch: 0, Loss: 10.18636703491211, Best Loss: 0.0, Best sum: 0
+Epoch: 1000, Loss: -0.5325876474380493, Best Loss: -0.5290002822875977, Best sum: 0.6039168834686279
+Epoch: 2000, Loss: -0.5508005619049072, Best Loss: -0.5942080616950989, Best sum: 0.604195773601532
+Epoch: 3000, Loss: -0.3084675967693329, Best Loss: -0.5950838923454285, Best sum: 0.6043206453323364
+Epoch: 4000, Loss: -0.5809328556060791, Best Loss: -0.6045332551002502, Best sum: 0.6045332551002502
+GNN training (n=85) took 20.905
+  our QRF-GNN      energy=-0.00168  |S|=10 (K=10)  t=21.0s
+=== port4 N=98 K=10 | QUBO energy (lower=better) ===
+Epoch: 0, Loss: 12.409964561462402
+Epoch: 1000, Loss: 0.03277096524834633
+Stopping early on epoch 1081 (patience: 100)
+GNN training (n=98) took 2.603
+GNN final continuous loss: 0.02640378847718239
+GNN best continuous loss: 0.0
+  amazon PI-GNN    energy=0.56331  |S|=0 (K=10)  t=2.6s
+Epoch: 0, Loss: 12.662055015563965, Best Loss: 0.0, Best sum: 0
+Epoch: 1000, Loss: -0.2955929636955261, Best Loss: -0.5574272274971008, Best sum: 0.5653448104858398
+Epoch: 2000, Loss: -0.48767387866973877, Best Loss: -0.5574272274971008, Best sum: 0.5653448104858398
+Epoch: 3000, Loss: -0.5146774053573608, Best Loss: -0.5574272274971008, Best sum: 0.5653448104858398
+Epoch: 4000, Loss: -0.5207539200782776, Best Loss: -0.565319299697876, Best sum: 0.5654274821281433
+GNN training (n=98) took 21.687
+  our QRF-GNN      energy=-0.00212  |S|=10 (K=10)  t=21.7s

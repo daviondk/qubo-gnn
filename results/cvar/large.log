@@ -1,0 +1,9 @@
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== CVaR(95%) synth_large(N200,scen3000): N=200 K=20 scen=3000 ===
+method                  CVaR    gap%    t(s)  note
+SCIP-MILP(exact)     0.00543    5.28   119.9  gap=4.149 timelimit
+EqualWeight          0.01411  173.63     0.0  
+Tabu+CVaR-LP         0.00516    0.00     0.0  
+GNN+CVaR-LP          0.00538    4.31     0.0  

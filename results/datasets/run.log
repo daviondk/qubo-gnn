@@ -1,0 +1,40 @@
+
+=== french49: N=49 K=10 (ra=1.0 rw=0.5) ===
+Restricted license - for non-production use only - expires 2027-11-29
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+reference: exact MIQP
+method                 obj  gap%(regret)   sharpe   k  feas    t(s)
+-------------------------------------------------------------------
+MIQP(exact)      -0.000265         0.000   0.0728  10  True    0.05
+SA               -0.000254         3.814   0.0700  10  True    0.11
+Tabu             -0.000265         0.014   0.0728  10  True    1.05
+Greedy           -0.000265         0.014   0.0728  10  True    0.00
+Random           -0.000258         2.648   0.0708  10  True    0.02
+GNN              -0.000265         0.014   0.0728  10  True    2.96
+
+=== nasdaq100: N=66 K=10 (ra=1.0 rw=0.5) ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+reference: exact MIQP
+method                 obj  gap%(regret)   sharpe   k  feas    t(s)
+-------------------------------------------------------------------
+MIQP(exact)      -0.000574         0.000   0.0976  10  True    0.00
+SA               -0.000557         3.012   0.0949  10  True    0.16
+Tabu             -0.000574         0.000   0.0976  10  True    1.05
+Greedy           -0.000574         0.000   0.0976  10  True    0.00
+Random           -0.000568         1.156   0.0963  10  True    0.02
+GNN              -0.000574         0.000   0.0976  10  True    2.75
+
+=== crypto: N=18 K=6 (ra=1.0 rw=0.5) ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+reference: exact MIQP
+method                 obj  gap%(regret)   sharpe   k  feas    t(s)
+-------------------------------------------------------------------
+MIQP(exact)      -0.000121         0.000   0.0797   6  True    0.01
+SA               -0.000051        58.026   0.0728   6  True    0.03
+Tabu             -0.000105        13.220   0.0779   6  True    1.05
+Greedy           -0.000105        13.220   0.0779   6  True    0.00
+Random           -0.000063        47.437   0.0743   6  True    0.02
+GNN              -0.000105        13.220   0.0779   6  True    2.98

@@ -1,0 +1,46 @@
+{
+  "french49": {
+    "SCIP-MILP(exact)": {
+      "cvar": 0.01629125876834702,
+      "time": 0.871002197265625,
+      "note": "gap=0.000 optimal"
+    },
+    "EqualWeight": {
+      "cvar": 0.02682969387755102,
+      "time": 0.0,
+      "note": ""
+    },
+    "Tabu+CVaR-LP": {
+      "cvar": 0.01763761880692575,
+      "time": 0.0,
+      "note": ""
+    },
+    "GNN+CVaR-LP": {
+      "cvar": 0.01763761880692575,
+      "time": 0.0,
+      "note": ""
+    }
+  },
+  "nasdaq100": {
+    "SCIP-MILP(exact)": {
+      "cvar": 0.010998506979659227,
+      "time": 30.69353723526001,
+      "note": "gap=0.000 optimal"
+    },
+    "EqualWeight": {
+      "cvar": 0.0199250444916852,
+      "time": 0.0,
+      "note": ""
+    },
+    "Tabu+CVaR-LP": {
+      "cvar": 0.012421238751371168,
+      "time": 0.0,
+      "note": ""
+    },
+    "GNN+CVaR-LP": {
+      "cvar": 0.01237875398609491,
+      "time": 0.0,
+      "note": ""
+    }
+  }
+}

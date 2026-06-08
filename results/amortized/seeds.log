@@ -1,0 +1,9 @@
+labelling 159 train windows (tabu, once)...
+  seed 0: mean gap 0.809%
+  seed 1: mean gap 1.195%
+  seed 2: mean gap 1.147%
+  seed 3: mean gap 0.979%
+  seed 4: mean gap 1.109%
+
+=== Amortized robustness (5 seeds, S&P100 held-out) ===
+mean gap vs tabu = 1.048% +/- 0.139%  (seeds: [0.81, 1.19, 1.15, 0.98, 1.11])

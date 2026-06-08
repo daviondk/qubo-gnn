@@ -1,0 +1,6 @@
+port1 (N=31): EXACT(SCIP) MED=0.0001 VRE=1.620% MRE=0.646% max_gap=0.0000 max_t/pt=0.5s
+port2 (N=85): EXACT(SCIP) MED=0.0001 VRE=6.789% MRE=1.365% max_gap=100000000000000000000.0000 max_t/pt=60.0s
+port3 (N=89): EXACT(SCIP) MED=0.0000 VRE=2.522% MRE=0.333% max_gap=1.2917 max_t/pt=60.0s
+port4 (N=98): EXACT(SCIP) MED=0.0001 VRE=2.631% MRE=0.872% max_gap=100000000000000000000.0000 max_t/pt=60.0s
+port5 (N=225): EXACT(SCIP) MED=0.0000 VRE=0.816% MRE=1.579% max_gap=0.0183 max_t/pt=59.1s
+saved results/orlib_med/scip_exact.json

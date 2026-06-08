@@ -1,0 +1,34 @@
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== index tracking port2: N=85 K=10 | benchmark=equal-weight ===
+method         ann.TE%     gap%
+SCIP(exact)    10.7351     0.00
+SA             14.8388    38.23
+Tabu           12.6466    17.81
+GNN            11.6238     8.28
+
+=== index tracking port4: N=98 K=10 | benchmark=equal-weight ===
+method         ann.TE%     gap%
+SCIP(exact)    10.8046     0.00
+SA             13.3179    23.26
+Tabu           12.1135    12.11
+GNN            14.6202    35.31
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== index tracking french49: N=49 K=10 | benchmark=equal-weight ===
+method         ann.TE%     gap%
+SCIP(exact)     3.2377     0.00
+SA              7.2932   125.26
+Tabu            7.5589   133.47
+GNN             8.4203   160.07
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== index tracking nasdaq100: N=66 K=10 | benchmark=equal-weight ===
+method         ann.TE%     gap%
+SCIP(exact)     5.2795     0.00
+SA             10.1466    92.19
+Tabu            9.5783    81.42
+GNN            12.0276   127.82

@@ -1,0 +1,52 @@
+exact port2: obj=-0.004110 gap=0.000
+exact port4: obj=-0.003636 gap=0.000
+exact synth200: obj=-0.005991 gap=0.000
+SA(100)          gap=7.652%
+Tabu(50)         gap=-0.005%
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+base             gap=-0.005%  feas=1.00  (8s)
+model=pignn      gap=-0.005%  feas=1.00  (8s)
+no_recurrent     gap=-0.005%  feas=1.00  (8s)
+no_refine        gap=-0.005%  feas=1.00  (7s)
+no_pagerank      gap=-0.005%  feas=1.00  (7s)
+no_localsearch   gap=10.508%  feas=1.00  (7s)
+lr=3e-3          gap=-0.005%  feas=1.00  (8s)
+lr=5e-4          gap=-0.005%  feas=1.00  (8s)
+epochs=2500      gap=-0.005%  feas=1.00  (7s)
+hidden=64        gap=-0.005%  feas=1.00  (17s)
+hidden=256       gap=-0.005%  feas=1.00  (7s)
+layers=2         gap=-0.005%  feas=1.00  (8s)
+layers=4         gap=-0.005%  feas=1.00  (8s)
+embed=16         gap=-0.005%  feas=1.00  (7s)
+embed=64         gap=-0.005%  feas=1.00  (7s)
+anneal=2e-4      gap=-0.005%  feas=1.00  (11s)
+penalty=2x       gap=-0.005%  feas=1.00  (7s)
+penalty=5x       gap=-0.005%  feas=1.00  (7s)
+penalty=20x      gap=-0.005%  feas=1.00  (7s)
+rounds=24        gap=-0.005%  feas=1.00  (7s)
+
+=== ABLATION (mean gap vs SCIP-exact over port2,port4,synth200; lower=better) ===
+config           mean_gap%  feasible
+Tabu(50)            -0.005      1.00
+base                -0.005      1.00
+model=pignn         -0.005      1.00
+no_recurrent        -0.005      1.00
+no_refine           -0.005      1.00
+no_pagerank         -0.005      1.00
+lr=3e-3             -0.005      1.00
+lr=5e-4             -0.005      1.00
+epochs=2500         -0.005      1.00
+hidden=64           -0.005      1.00
+hidden=256          -0.005      1.00
+layers=2            -0.005      1.00
+layers=4            -0.005      1.00
+embed=16            -0.005      1.00
+embed=64            -0.005      1.00
+anneal=2e-4         -0.005      1.00
+penalty=2x          -0.005      1.00
+penalty=5x          -0.005      1.00
+penalty=20x         -0.005      1.00
+rounds=24           -0.005      1.00
+SA(100)              7.652      1.00
+no_localsearch      10.508      1.00

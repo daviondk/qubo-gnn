@@ -1,0 +1,31 @@
+=== port2 (DAX 100) ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  port2 GNN     MED=0.0002 VRE=6.932% MRE=1.654% pts=51/51 t=107.5s
+Restricted license - for non-production use only - expires 2027-11-29
+  port2 MIQP    MED=0.0001 VRE=6.738% MRE=1.298% pts=51/51 t=4.8s
+  port2 SA      MED=0.0004 VRE=27.047% MRE=3.973% pts=51/51 t=12.1s
+  port2 Greedy  MED=0.0002 VRE=6.932% MRE=1.654% pts=51/51 t=0.3s
+=== port3 (FTSE 100) ===
+  port3 GNN     MED=0.0000 VRE=2.735% MRE=0.331% pts=51/51 t=104.9s
+  port3 MIQP    MED=0.0000 VRE=2.502% MRE=0.344% pts=51/51 t=7.0s
+  port3 SA      MED=0.0002 VRE=21.375% MRE=1.271% pts=51/51 t=12.8s
+  port3 Greedy  MED=0.0000 VRE=2.735% MRE=0.331% pts=51/51 t=0.3s
+=== port4 (S&P 100) ===
+  port4 GNN     MED=0.0001 VRE=3.014% MRE=0.745% pts=51/51 t=109.0s
+  port4 MIQP    MED=0.0001 VRE=2.497% MRE=0.919% pts=51/51 t=51.8s
+  port4 SA      MED=0.0003 VRE=19.908% MRE=2.608% pts=51/51 t=14.7s
+  port4 Greedy  MED=0.0001 VRE=3.014% MRE=0.745% pts=51/51 t=2.1s
+=== port5 (Nikkei 225) ===
+  port5 GNN     MED=0.0000 VRE=0.833% MRE=0.525% pts=51/51 t=123.4s
+  port5 MIQP    MED=0.0000 VRE=0.488% MRE=1.146% pts=1/51 t=21.5s
+  port5 SA      MED=0.0004 VRE=31.494% MRE=9.317% pts=51/51 t=53.4s
+  port5 Greedy  MED=0.0000 VRE=0.833% MRE=0.525% pts=51/51 t=5.3s
+
+
+=== MED COMPARISON (ours vs published Cura2009 / IPSO-SA / Firefly) ===
+instance        GNN     MIQP       SA   Greedy       GA       TS      SA*      PSO  IPSO-SA  Firefly
+port2        0.0002   0.0001   0.0004   0.0002   0.0076   0.0082   0.0078   0.0090   0.0001   0.0009
+port3        0.0000   0.0000   0.0002   0.0000   0.0020   0.0021   0.0021   0.0022   0.0000   0.0004
+port4        0.0001   0.0001   0.0003   0.0001   0.0041   0.0041   0.0041   0.0052   0.0001   0.0003
+port5        0.0000   0.0000   0.0004   0.0000   0.0093   0.0010   0.0010   0.0019   0.0000   0.0000

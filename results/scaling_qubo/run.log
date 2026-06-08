@@ -1,0 +1,16 @@
+
+=== N=500 K=25 (dense selection QUBO, 500 binary vars) ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+method          energy     gap%   k(=K?)     t(s)  note
+SCIP               inf      nan        ?      0.0  SCIP does not support nonlinear objective function
+SA             -0.0024   58.720       25      4.6  
+Tabu           -0.0058    0.000       25      1.2  
+GNN            -0.0058    0.000       25     16.9  
+
+=== N=1000 K=50 (dense selection QUBO, 1000 binary vars) ===
+method          energy     gap%   k(=K?)     t(s)  note
+SCIP               inf      nan        ?      0.0  SCIP does not support nonlinear objective function
+SA             -0.0023   58.470       50     20.4  
+Tabu           -0.0056    0.000       50      2.1  
+GNN            -0.0056    0.002       50     42.2  

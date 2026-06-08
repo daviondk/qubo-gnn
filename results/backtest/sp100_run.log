@@ -1,0 +1,16 @@
+$MMC: possibly delisted; no timezone found
+
+1 Failed download:
+['MMC']: possibly delisted; no timezone found
+=== backtest sp100 | universe 71 assets | K=15 | rebalance=63d | 2005-01-03->2024-12-30 ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+OOS 2006-01-04 -> 2024-12-30  (280s)
+strategy          Sharpe  Sortino   AnnRet     Vol   MaxDD    Turn    FinW
+--------------------------------------------------------------------------
+EqualWeight        0.813    0.994    0.150   0.185  -0.462   0.075   12.45
+MinVar             0.700    0.856    0.099   0.141  -0.344   0.552    5.39
+MaxSharpe          0.750    0.981    0.152   0.203  -0.514   1.152   12.09
+Markowitz0.5       0.823    1.217    0.298   0.362  -0.615   1.043   83.08
+SA-card(K15)       0.805    1.186    0.291   0.361  -0.628   1.249   72.88
+GNN-card(K15)      0.823    1.217    0.298   0.362  -0.615   1.043   83.07

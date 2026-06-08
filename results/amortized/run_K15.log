@@ -1,0 +1,19 @@
+N=71 K=15 | 159 train windows, 69 test windows | test 2019-04-11->2024-12-12
+  epoch 0 train_loss 1519.852
+  epoch 50 train_loss -0.000
+  epoch 100 train_loss -0.000
+  epoch 150 train_loss -0.000
+  epoch 200 train_loss -0.000
+  epoch 250 train_loss -0.000
+  epoch 300 train_loss -0.000
+  epoch 350 train_loss -0.000
+amortized training: 70s (one-time)
+
+=== AMORTIZED vs per-instance Tabu (held-out S&P100 windows) ===
+  amort_mean_gap_vs_tabu_%: 71.3111
+  amort_median_gap_%: 68.2682
+  amort_inference_ms: 2.9446
+  tabu_solve_s: 4.2052
+  speedup_x: 1428.0899
+  train_time_s: 69.9493
+  n_test: 69

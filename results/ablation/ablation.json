@@ -1,0 +1,112 @@
+[
+  {
+    "config": "Tabu(50)",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "base",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "model=pignn",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "no_recurrent",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "no_refine",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "no_pagerank",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "lr=3e-3",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "lr=5e-4",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "epochs=2500",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "hidden=64",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "hidden=256",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "layers=2",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "layers=4",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "embed=16",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "embed=64",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "anneal=2e-4",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "penalty=2x",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "penalty=5x",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "penalty=20x",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "rounds=24",
+    "mean_gap_pct": -0.0048038604292054785,
+    "feasible": 1.0
+  },
+  {
+    "config": "SA(100)",
+    "mean_gap_pct": 7.6522689439037705,
+    "feasible": 1.0
+  },
+  {
+    "config": "no_localsearch",
+    "mean_gap_pct": 10.507685903657132,
+    "feasible": 1.0
+  }
+]

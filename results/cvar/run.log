@@ -1,0 +1,18 @@
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== CVaR(95%) french49: N=49 K=10 scen=400 ===
+method                  CVaR    gap%    t(s)  note
+SCIP-MILP(exact)     0.01629    0.00     0.9  gap=0.000 optimal
+EqualWeight          0.02683   64.69     0.0  
+Tabu+CVaR-LP         0.01764    8.26     0.0  
+GNN+CVaR-LP          0.01764    8.26     0.0  
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+
+=== CVaR(95%) nasdaq100: N=66 K=10 scen=400 ===
+method                  CVaR    gap%    t(s)  note
+SCIP-MILP(exact)     0.01100    0.00    30.7  gap=0.000 optimal
+EqualWeight          0.01993   81.16     0.0  
+Tabu+CVaR-LP         0.01242   12.94     0.0  
+GNN+CVaR-LP          0.01238   12.55     0.0  

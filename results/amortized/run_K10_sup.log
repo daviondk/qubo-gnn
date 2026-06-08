@@ -1,0 +1,21 @@
+N=71 K=10 | 159 train windows, 69 test windows | test 2019-04-11->2024-12-12
+generating tabu labels for train windows (one-time)...
+  labels in 335s
+  epoch 0 train_loss 4.317
+  epoch 50 train_loss 0.597
+  epoch 100 train_loss 0.450
+  epoch 150 train_loss 0.350
+  epoch 200 train_loss 0.214
+  epoch 250 train_loss 0.191
+  epoch 300 train_loss 0.150
+  epoch 350 train_loss 0.096
+amortized training (sup): 75s (one-time)
+
+=== AMORTIZED vs per-instance Tabu (held-out S&P100 windows) ===
+  amort_mean_gap_vs_tabu_%: 1.3752
+  amort_median_gap_%: 0.9289
+  amort_inference_ms: 2.9924
+  tabu_solve_s: 4.2050
+  speedup_x: 1405.2024
+  train_time_s: 74.9331
+  n_test: 69

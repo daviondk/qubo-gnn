@@ -1,0 +1,9 @@
+{
+  "amort_mean_gap_vs_tabu_%": 1.3752413346854988,
+  "amort_median_gap_%": 0.92893359051577,
+  "amort_inference_ms": 2.9924434164296025,
+  "tabu_solve_s": 4.204990093258844,
+  "speedup_x": 1405.2024058231214,
+  "train_time_s": 74.93306159973145,
+  "n_test": 69
+}

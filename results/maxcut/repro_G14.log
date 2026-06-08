@@ -1,0 +1,162 @@
+device=cpu
+Epoch: 0, Loss: -1195.564208984375, Best Loss: -1195.564208984375, Best sum: 2289.0
+Epoch: 1000, Loss: -2979.999755859375, Best Loss: -3011.883544921875, Best sum: 3012.0
+Epoch: 2000, Loss: -2924.407470703125, Best Loss: -3011.883544921875, Best sum: 3012.0
+Epoch: 3000, Loss: -3030.0, Best Loss: -3041.38232421875, Best sum: 3042.0
+Epoch: 4000, Loss: -3031.0, Best Loss: -3041.38232421875, Best sum: 3042.0
+Epoch: 5000, Loss: -3021.0, Best Loss: -3041.38232421875, Best sum: 3042.0
+GNN training (n=800) took 35.021
+  G14 seed 1: cut=3042 best=3042
+Epoch: 0, Loss: -1174.3631591796875, Best Loss: -1174.3631591796875, Best sum: 2238.0
+Epoch: 1000, Loss: -2955.784912109375, Best Loss: -3009.486083984375, Best sum: 3012.0
+Epoch: 2000, Loss: -2999.435791015625, Best Loss: -3010.855712890625, Best sum: 3013.0
+Epoch: 3000, Loss: -2980.366455078125, Best Loss: -3015.937255859375, Best sum: 3016.0
+Epoch: 4000, Loss: -2969.923095703125, Best Loss: -3015.937255859375, Best sum: 3016.0
+Epoch: 5000, Loss: -2994.987548828125, Best Loss: -3015.937255859375, Best sum: 3016.0
+GNN training (n=800) took 34.329
+  G14 seed 2: cut=3016 best=3042
+Epoch: 0, Loss: -1131.6854248046875, Best Loss: -1131.6854248046875, Best sum: 2180.0
+Epoch: 1000, Loss: -3001.891357421875, Best Loss: -3004.74609375, Best sum: 3005.0
+Epoch: 2000, Loss: -3010.54638671875, Best Loss: -3011.263671875, Best sum: 3013.0
+Epoch: 3000, Loss: -2965.314697265625, Best Loss: -3021.344482421875, Best sum: 3022.0
+Epoch: 4000, Loss: -2864.005859375, Best Loss: -3021.344482421875, Best sum: 3022.0
+Epoch: 5000, Loss: -2908.5400390625, Best Loss: -3021.344482421875, Best sum: 3022.0
+GNN training (n=800) took 34.128
+  G14 seed 3: cut=3024 best=3042
+Epoch: 0, Loss: -752.0838012695312, Best Loss: -752.0838012695312, Best sum: 1611.0
+Epoch: 1000, Loss: -2986.455810546875, Best Loss: -3007.48583984375, Best sum: 3009.0
+Epoch: 2000, Loss: -2953.49951171875, Best Loss: -3027.10888671875, Best sum: 3028.0
+Epoch: 3000, Loss: -2984.91748046875, Best Loss: -3030.0, Best sum: 3030.0
+Epoch: 4000, Loss: -2986.0126953125, Best Loss: -3030.0, Best sum: 3030.0
+Epoch: 5000, Loss: -2980.284912109375, Best Loss: -3030.0, Best sum: 3030.0
+GNN training (n=800) took 33.55
+  G14 seed 4: cut=3030 best=3042
+Epoch: 0, Loss: -1111.073486328125, Best Loss: -1111.073486328125, Best sum: 2331.0
+Epoch: 1000, Loss: -3012.048583984375, Best Loss: -3017.298095703125, Best sum: 3018.0
+Epoch: 2000, Loss: -2998.608642578125, Best Loss: -3020.0, Best sum: 3020.0
+Epoch: 3000, Loss: -3029.940185546875, Best Loss: -3035.990966796875, Best sum: 3036.0
+Epoch: 4000, Loss: -3025.55419921875, Best Loss: -3035.990966796875, Best sum: 3036.0
+Epoch: 5000, Loss: -3000.060546875, Best Loss: -3035.990966796875, Best sum: 3036.0
+GNN training (n=800) took 33.658
+  G14 seed 5: cut=3039 best=3042
+Epoch: 0, Loss: -866.205810546875, Best Loss: -866.205810546875, Best sum: 1634.0
+Epoch: 1000, Loss: -2987.0, Best Loss: -3006.3603515625, Best sum: 3007.0
+Epoch: 2000, Loss: -2985.99951171875, Best Loss: -3006.3603515625, Best sum: 3007.0
+Epoch: 3000, Loss: -2970.5390625, Best Loss: -3006.3603515625, Best sum: 3007.0
+Epoch: 4000, Loss: -3007.0, Best Loss: -3015.946044921875, Best sum: 3016.0
+Epoch: 5000, Loss: -3026.987060546875, Best Loss: -3030.686767578125, Best sum: 3031.0
+GNN training (n=800) took 33.444
+  G14 seed 6: cut=3047 best=3047
+Epoch: 0, Loss: -394.94970703125, Best Loss: -394.94970703125, Best sum: 582.0
+Epoch: 1000, Loss: -2936.9765625, Best Loss: -3008.392333984375, Best sum: 3010.0
+Epoch: 2000, Loss: -2956.466796875, Best Loss: -3016.969970703125, Best sum: 3017.0
+Epoch: 3000, Loss: -2988.851318359375, Best Loss: -3017.513671875, Best sum: 3018.0
+Epoch: 4000, Loss: -2896.760986328125, Best Loss: -3022.62841796875, Best sum: 3023.0
+Epoch: 5000, Loss: -2967.771484375, Best Loss: -3027.925537109375, Best sum: 3028.0
+GNN training (n=800) took 33.823
+  G14 seed 7: cut=3028 best=3047
+Epoch: 0, Loss: -762.9434814453125, Best Loss: -762.9434814453125, Best sum: 1462.0
+Epoch: 1000, Loss: -2898.166015625, Best Loss: -3020.456787109375, Best sum: 3023.0
+Epoch: 2000, Loss: -2934.028564453125, Best Loss: -3031.923583984375, Best sum: 3032.0
+Epoch: 3000, Loss: -2976.798828125, Best Loss: -3031.923583984375, Best sum: 3032.0
+Epoch: 4000, Loss: -2924.293212890625, Best Loss: -3031.923583984375, Best sum: 3032.0
+Epoch: 5000, Loss: -2953.857421875, Best Loss: -3031.923583984375, Best sum: 3032.0
+GNN training (n=800) took 33.478
+  G14 seed 8: cut=3032 best=3047
+Epoch: 0, Loss: -966.927978515625, Best Loss: -966.927978515625, Best sum: 1877.0
+Epoch: 1000, Loss: -2852.132568359375, Best Loss: -3000.304931640625, Best sum: 3001.0
+Epoch: 2000, Loss: -2931.359619140625, Best Loss: -3000.304931640625, Best sum: 3001.0
+Epoch: 3000, Loss: -2834.613037109375, Best Loss: -3008.700439453125, Best sum: 3011.0
+Epoch: 4000, Loss: -2970.641357421875, Best Loss: -3025.94091796875, Best sum: 3027.0
+Epoch: 5000, Loss: -2890.283203125, Best Loss: -3036.064453125, Best sum: 3038.0
+GNN training (n=800) took 33.573
+  G14 seed 9: cut=3038 best=3047
+Epoch: 0, Loss: -1118.1029052734375, Best Loss: -1118.1029052734375, Best sum: 2200.0
+Epoch: 1000, Loss: -3007.0693359375, Best Loss: -3014.566650390625, Best sum: 3015.0
+Epoch: 2000, Loss: -3013.898681640625, Best Loss: -3022.954345703125, Best sum: 3023.0
+Epoch: 3000, Loss: -3015.0, Best Loss: -3022.954345703125, Best sum: 3023.0
+Epoch: 4000, Loss: -3015.913818359375, Best Loss: -3033.0, Best sum: 3033.0
+Epoch: 5000, Loss: -2998.70458984375, Best Loss: -3035.3779296875, Best sum: 3038.0
+GNN training (n=800) took 33.52
+  G14 seed 10: cut=3044 best=3047
+Epoch: 0, Loss: -981.5087890625, Best Loss: -981.5087890625, Best sum: 1805.0
+Epoch: 1000, Loss: -3008.941650390625, Best Loss: -3033.997802734375, Best sum: 3034.0
+Epoch: 2000, Loss: -3025.908447265625, Best Loss: -3045.0, Best sum: 3045.0
+Epoch: 3000, Loss: -3022.0, Best Loss: -3045.0, Best sum: 3045.0
+Epoch: 4000, Loss: -3042.99853515625, Best Loss: -3045.0, Best sum: 3045.0
+Epoch: 5000, Loss: -3032.59912109375, Best Loss: -3049.0, Best sum: 3049.0
+GNN training (n=800) took 34.271
+  G14 seed 11: cut=3050 best=3050
+Epoch: 0, Loss: -1090.81982421875, Best Loss: -1090.81982421875, Best sum: 2011.0
+Epoch: 1000, Loss: -3002.0, Best Loss: -3001.826904296875, Best sum: 3003.0
+Epoch: 2000, Loss: -2990.85498046875, Best Loss: -3004.0, Best sum: 3004.0
+Epoch: 3000, Loss: -3026.98095703125, Best Loss: -3029.999755859375, Best sum: 3030.0
+Epoch: 4000, Loss: -3027.0, Best Loss: -3031.0, Best sum: 3031.0
+Epoch: 5000, Loss: -3020.38427734375, Best Loss: -3039.0, Best sum: 3039.0
+GNN training (n=800) took 33.586
+  G14 seed 12: cut=3042 best=3050
+Epoch: 0, Loss: -986.0465087890625, Best Loss: -986.0465087890625, Best sum: 2038.0
+Epoch: 1000, Loss: -3000.71044921875, Best Loss: -3016.945068359375, Best sum: 3017.0
+Epoch: 2000, Loss: -3005.27734375, Best Loss: -3016.945068359375, Best sum: 3017.0
+Epoch: 3000, Loss: -2966.82080078125, Best Loss: -3034.999755859375, Best sum: 3035.0
+Epoch: 4000, Loss: -3025.4921875, Best Loss: -3034.999755859375, Best sum: 3035.0
+Epoch: 5000, Loss: -2969.02734375, Best Loss: -3034.999755859375, Best sum: 3035.0
+GNN training (n=800) took 33.372
+  G14 seed 13: cut=3035 best=3050
+Epoch: 0, Loss: -1069.3956298828125, Best Loss: -1069.3956298828125, Best sum: 2117.0
+Epoch: 1000, Loss: -3017.9755859375, Best Loss: -3019.4560546875, Best sum: 3020.0
+Epoch: 2000, Loss: -2779.748291015625, Best Loss: -3019.52197265625, Best sum: 3021.0
+Epoch: 3000, Loss: -3014.36328125, Best Loss: -3027.97705078125, Best sum: 3028.0
+Epoch: 4000, Loss: -3028.090576171875, Best Loss: -3031.302978515625, Best sum: 3033.0
+Epoch: 5000, Loss: -3002.57177734375, Best Loss: -3035.8173828125, Best sum: 3036.0
+GNN training (n=800) took 33.563
+  G14 seed 14: cut=3036 best=3050
+Epoch: 0, Loss: -879.309814453125, Best Loss: -879.309814453125, Best sum: 1954.0
+Epoch: 1000, Loss: -2939.564453125, Best Loss: -3021.99072265625, Best sum: 3022.0
+Epoch: 2000, Loss: -2973.9677734375, Best Loss: -3021.99072265625, Best sum: 3022.0
+Epoch: 3000, Loss: -2989.33935546875, Best Loss: -3021.99072265625, Best sum: 3022.0
+Epoch: 4000, Loss: -2971.12109375, Best Loss: -3021.99072265625, Best sum: 3022.0
+Epoch: 5000, Loss: -2963.52587890625, Best Loss: -3021.99072265625, Best sum: 3022.0
+GNN training (n=800) took 33.615
+  G14 seed 15: cut=3030 best=3050
+Epoch: 0, Loss: -769.94921875, Best Loss: -769.94921875, Best sum: 1537.0
+Epoch: 1000, Loss: -2993.998046875, Best Loss: -3018.328369140625, Best sum: 3023.0
+Epoch: 2000, Loss: -3015.99755859375, Best Loss: -3030.99609375, Best sum: 3031.0
+Epoch: 3000, Loss: -2811.521484375, Best Loss: -3030.99609375, Best sum: 3031.0
+Epoch: 4000, Loss: -3005.661865234375, Best Loss: -3030.99609375, Best sum: 3031.0
+Epoch: 5000, Loss: -3005.875, Best Loss: -3030.99609375, Best sum: 3031.0
+GNN training (n=800) took 33.624
+  G14 seed 16: cut=3031 best=3050
+Epoch: 0, Loss: -1194.200927734375, Best Loss: -1194.200927734375, Best sum: 2280.0
+Epoch: 1000, Loss: -2969.945556640625, Best Loss: -3013.4013671875, Best sum: 3017.0
+Epoch: 2000, Loss: -3003.689453125, Best Loss: -3025.0322265625, Best sum: 3028.0
+Epoch: 3000, Loss: -2951.898193359375, Best Loss: -3031.64599609375, Best sum: 3032.0
+Epoch: 4000, Loss: -2985.518798828125, Best Loss: -3033.0, Best sum: 3033.0
+Epoch: 5000, Loss: -2902.67333984375, Best Loss: -3033.0, Best sum: 3033.0
+GNN training (n=800) took 33.626
+  G14 seed 17: cut=3033 best=3050
+Epoch: 0, Loss: -956.622314453125, Best Loss: -956.622314453125, Best sum: 1927.0
+Epoch: 1000, Loss: -2984.870361328125, Best Loss: -3010.983154296875, Best sum: 3011.0
+Epoch: 2000, Loss: -2986.0, Best Loss: -3010.983154296875, Best sum: 3011.0
+Epoch: 3000, Loss: -2982.000244140625, Best Loss: -3010.983154296875, Best sum: 3011.0
+Epoch: 4000, Loss: -2990.14013671875, Best Loss: -3015.97412109375, Best sum: 3019.0
+Epoch: 5000, Loss: -3013.554443359375, Best Loss: -3030.171875, Best sum: 3034.0
+GNN training (n=800) took 33.45
+  G14 seed 18: cut=3034 best=3050
+Epoch: 0, Loss: -1227.3973388671875, Best Loss: -1227.3973388671875, Best sum: 2333.0
+Epoch: 1000, Loss: -2961.0, Best Loss: -3006.457763671875, Best sum: 3007.0
+Epoch: 2000, Loss: -2970.0, Best Loss: -3006.457763671875, Best sum: 3007.0
+Epoch: 3000, Loss: -3006.6025390625, Best Loss: -3010.415771484375, Best sum: 3012.0
+Epoch: 4000, Loss: -3003.95751953125, Best Loss: -3020.95947265625, Best sum: 3021.0
+Epoch: 5000, Loss: -2841.4794921875, Best Loss: -3030.6318359375, Best sum: 3031.0
+GNN training (n=800) took 33.431
+  G14 seed 19: cut=3031 best=3050
+Epoch: 0, Loss: -924.6896362304688, Best Loss: -924.6896362304688, Best sum: 1812.0
+Epoch: 1000, Loss: -2966.575439453125, Best Loss: -3019.0, Best sum: 3019.0
+Epoch: 2000, Loss: -2785.0888671875, Best Loss: -3019.0, Best sum: 3019.0
+Epoch: 3000, Loss: -2950.916748046875, Best Loss: -3019.0, Best sum: 3019.0
+Epoch: 4000, Loss: -2932.9404296875, Best Loss: -3021.910888671875, Best sum: 3022.0
+Epoch: 5000, Loss: -3014.9853515625, Best Loss: -3021.910888671875, Best sum: 3022.0
+GNN training (n=800) took 33.628
+  G14 seed 20: cut=3025 best=3050
+>>> G14 n=800: GNN best cut=3050 | best-known=3064 (0.9954) | paper-QRF=3058

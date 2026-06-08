@@ -1,0 +1,5 @@
+port1: OURS(exact-frontier MPE)=1.1984%  | published: GA=1.0974 SA=1.0957 TS=1.1217 IPSO=1.0953 ARO=1.4181
+port2: OURS(exact-frontier MPE)=3.0439%  | published: GA=2.5424 SA=2.9297 TS=3.3049 IPSO=2.5417 ARO=1.319
+port3: OURS(exact-frontier MPE)=0.8732%  | published: GA=1.1076 SA=1.4623 TS=1.1217 IPSO=1.0628 ARO=0.8151
+port4: OURS(exact-frontier MPE)=2.1156%  | published: GA=1.9328 SA=3.0696 TS=3.3092 IPSO=1.689 ARO=1.4468
+port5: OURS(exact-frontier MPE)=2.1301%  | published: GA=0.7961 SA=0.6732 TS=0.8975 IPSO=0.687 ARO=0.6179

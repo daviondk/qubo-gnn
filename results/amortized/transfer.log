@@ -1,0 +1,9 @@
+train S&P100: N=71, 159 windows; labels via tabu...
+  labels 335s
+trained.
+
+=== Amortized OOD transfer (gap vs per-instance tabu; trained ONLY on S&P100) ===
+test universe                mean gap%  median%  inf ms  tabu s  speedup    n
+SP100 (in-dist, held-out)        0.873    0.668    2.49    2.11      844   69
+NASDAQ100 (OOD universe)         0.487    0.677    1.90    2.10     1107   40
+French49 (OOD, diff N)           2.112    0.712    1.88    2.10     1121   40

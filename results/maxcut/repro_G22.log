@@ -1,0 +1,49 @@
+device=cpu
+Epoch: 0, Loss: -5045.16748046875, Best Loss: -5045.16748046875, Best sum: 9587.0
+Epoch: 1000, Loss: -12696.939453125, Best Loss: -13103.9287109375, Best sum: 13104.0
+Epoch: 2000, Loss: -13115.349609375, Best Loss: -13193.060546875, Best sum: 13195.0
+Epoch: 3000, Loss: -13209.0, Best Loss: -13210.0, Best sum: 13210.0
+GNN training (n=2000) took 40.244
+  G22 seed 1: cut=13218 best=13218
+Epoch: 0, Loss: -4892.1484375, Best Loss: -4892.1484375, Best sum: 9626.0
+Epoch: 1000, Loss: -13202.994140625, Best Loss: -13207.33203125, Best sum: 13208.0
+Epoch: 2000, Loss: -13225.9990234375, Best Loss: -13226.0, Best sum: 13226.0
+Epoch: 3000, Loss: -13243.1181640625, Best Loss: -13247.0537109375, Best sum: 13251.0
+GNN training (n=2000) took 40.07
+  G22 seed 2: cut=13275 best=13275
+Epoch: 0, Loss: -4531.205078125, Best Loss: -4531.205078125, Best sum: 9246.0
+Epoch: 1000, Loss: -13177.30859375, Best Loss: -13184.736328125, Best sum: 13186.0
+Epoch: 2000, Loss: -13113.98828125, Best Loss: -13241.6044921875, Best sum: 13242.0
+Epoch: 3000, Loss: -13082.15625, Best Loss: -13241.6044921875, Best sum: 13242.0
+GNN training (n=2000) took 40.172
+  G22 seed 3: cut=13242 best=13275
+Epoch: 0, Loss: -3525.2578125, Best Loss: -3525.2578125, Best sum: 6777.0
+Epoch: 1000, Loss: -13175.94921875, Best Loss: -13183.6201171875, Best sum: 13184.0
+Epoch: 2000, Loss: -13132.6416015625, Best Loss: -13183.6201171875, Best sum: 13184.0
+Epoch: 3000, Loss: -13183.822265625, Best Loss: -13207.7900390625, Best sum: 13210.0
+GNN training (n=2000) took 40.121
+  G22 seed 4: cut=13253 best=13275
+Epoch: 0, Loss: -5028.828125, Best Loss: -5028.828125, Best sum: 10087.0
+Epoch: 1000, Loss: -13179.208984375, Best Loss: -13189.728515625, Best sum: 13190.0
+Epoch: 2000, Loss: -13179.634765625, Best Loss: -13218.552734375, Best sum: 13219.0
+Epoch: 3000, Loss: -13207.2373046875, Best Loss: -13247.3369140625, Best sum: 13248.0
+GNN training (n=2000) took 40.088
+  G22 seed 5: cut=13248 best=13275
+Epoch: 0, Loss: -3586.2333984375, Best Loss: -3586.2333984375, Best sum: 6480.0
+Epoch: 1000, Loss: -13099.0, Best Loss: -13095.7470703125, Best sum: 13100.0
+Stopping early on epoch 1249 (patience: 100)
+GNN training (n=2000) took 13.154
+  G22 seed 6: cut=13100 best=13275
+Epoch: 0, Loss: -1444.9500732421875, Best Loss: -1444.9500732421875, Best sum: 2489.0
+Epoch: 1000, Loss: -13267.623046875, Best Loss: -13273.958984375, Best sum: 13274.0
+Epoch: 2000, Loss: -13247.0, Best Loss: -13273.958984375, Best sum: 13274.0
+Epoch: 3000, Loss: -13296.0, Best Loss: -13300.564453125, Best sum: 13302.0
+GNN training (n=2000) took 40.134
+  G22 seed 7: cut=13302 best=13302
+Epoch: 0, Loss: -2638.896728515625, Best Loss: -2638.896728515625, Best sum: 4616.0
+Epoch: 1000, Loss: -13168.2587890625, Best Loss: -13196.8134765625, Best sum: 13198.0
+Epoch: 2000, Loss: -13149.74609375, Best Loss: -13196.8134765625, Best sum: 13198.0
+Epoch: 3000, Loss: -13144.1103515625, Best Loss: -13219.046875, Best sum: 13220.0
+GNN training (n=2000) took 39.788
+  G22 seed 8: cut=13220 best=13302
+>>> G22 n=2000: GNN best cut=13302 | best-known=13359 (0.9957) | paper-QRF=13344

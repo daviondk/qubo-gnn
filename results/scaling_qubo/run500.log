@@ -1,0 +1,9 @@
+
+=== N=500 K=25 (dense selection QUBO, 500 binary vars) ===
+D:\research-qubo\.venv\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+method          energy     gap%   k(=K?)     t(s)  note
+SCIP            4.235473347.685       50     89.8  timelimit
+SA             -0.0024   58.720       25      4.6  
+Tabu           -0.0058    0.000       25      1.3  
+GNN            -0.0058    0.000       25      8.1  

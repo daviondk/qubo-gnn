@@ -1,0 +1,7 @@
+$Q: possibly delisted; no price data found  (1d 2015-01-01 -> 2024-12-31) (Yahoo error = "Data doesn't exist for startDate = 1420088400, endDate = 1735621200")
+$SNDK: possibly delisted; no price data found  (1d 2015-01-01 -> 2024-12-31) (Yahoo error = "Data doesn't exist for startDate = 1420088400, endDate = 1735621200")
+$FDXF: possibly delisted; no price data found  (1d 2015-01-01 -> 2024-12-31) (Yahoo error = "Data doesn't exist for startDate = 1420088400, endDate = 1735621200")
+
+3 Failed downloads:
+['Q', 'SNDK', 'FDXF']: possibly delisted; no price data found  (1d 2015-01-01 -> 2024-12-31) (Yahoo error = "Data doesn't exist for startDate = 1420088400, endDate = 1735621200")
+sp500: 461 assets x 2514 days 2015-01-05 -> 2024-12-30

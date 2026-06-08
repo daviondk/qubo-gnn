@@ -1,0 +1,54 @@
+{
+  "french49": {
+    "MIQP(exact)": {
+      "gap": 0.0,
+      "feasible": true
+    },
+    "SA": {
+      "gap": 0.023369626192574433,
+      "feasible": true
+    },
+    "Tabu": {
+      "gap": 4.438314899504469e-06,
+      "feasible": true
+    },
+    "Greedy": {
+      "gap": 4.438314899504469e-06,
+      "feasible": true
+    },
+    "Random": {
+      "gap": 0.018427728002102114,
+      "feasible": true
+    },
+    "GNN": {
+      "gap": 4.438314899504469e-06,
+      "feasible": true
+    }
+  },
+  "nasdaq100": {
+    "MIQP(exact)": {
+      "gap": 0.0,
+      "feasible": true
+    },
+    "SA": {
+      "gap": 6.650163729210496e-07,
+      "feasible": true
+    },
+    "Tabu": {
+      "gap": 1.2937741962116053e-06,
+      "feasible": true
+    },
+    "Greedy": {
+      "gap": 1.2937741962116053e-06,
+      "feasible": true
+    },
+    "Random": {
+      "gap": 3.62377806170453e-07,
+      "feasible": true
+    },
+    "GNN": {
+      "gap": 1.2937741962116053e-06,
+      "feasible": true
+    }
+  }
+}
