@@ -73,6 +73,22 @@ facility-location problems are "false-hard" for learning, exactly like cardinali
 family — which we already win. The remaining list problems fail condition (1) (greedy-dominated), (2) (strong
 diffusion/physics SOTA), or (3) (in QIGNN). This is why the search converges.
 
+### The deeper mechanism: relaxation vs. search (validated on 2 live runs)
+Condition (2) sharpens into one rule that predicts every result. Learned/heuristic solvers split into:
+- **relaxation / single-shot** — emit one (soft) assignment + decode: OptGNN, HyperSAT, ErdosGNN, ROS, EGN.
+- **iterative search** — anytime stochastic search over assignments: classical (WalkSAT, MOH, Survey
+  Propagation, tabu) and learned (ANYCSP [IJCAI'23, 2208.10227], X2GNN, diffusion samplers DiffUCO/SDDS).
+
+Our method (relaxation + light 1-flip) **beats relaxation/single-shot solvers** but **loses to iterative
+search**. Every observation follows:
+- Max-SAT: published SOTA = relaxation (OptGNN/HyperSAT) → **we win** (E105/E106).
+- Max-3-Cut: ROS (relaxation) we ≈/beat, but ANYCSP + MOH (search) lead → **mid-pack** (E108).
+- Graph CO (MDS/MVC/MaxClique): diffusion *samplers* (search) lead → mid-pack.
+So the honest, bulletproof claim is **best among relaxation-based learned solvers**; iterative-search methods
+(learned or classical) are a stronger, separate league we do not contest. Note ANYCSP benchmarks SAT only as
+decision (#solved, Table 3) and at N=10⁴ (Table 4) — not on the N=100 avg-unsat regime — so it is not in our
+comparison table; it is cited as the canonical learned-*search* method that defines the stronger league.
+
 ## SAT-optimization arena — exhaustively checked (only OptGNN + HyperSAT give clean comparable tables)
 Every learned-MaxSAT paper found was examined; only two report avg-(weighted-)unsatisfied-clause tables on
 standard/distribution-matched instances — and we beat both. The rest are non-comparable by metric or data:

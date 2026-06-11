@@ -90,8 +90,14 @@ learned/neural solvers on (weighted) Max-SAT**, mid-pack on graph problems (MDS/
 Max-SAT is the niche: the energy is a clean low-order CSP objective on which the relaxation finds strong local
 minima, and the problem family is exactly where the *learned* SOTA (OptGNN, HyperSAT) is itself imperfect.
 
-We are candid that specialized **classical** SAT solvers (WalkSAT, Survey Propagation, core-guided Max-SAT)
-remain ahead — the claim is specifically *best among learned solvers*, on the published learned-solver numbers.
+**Scope of the claim (relaxation vs. search).** The precise, defensible statement is: our method is best among
+**relaxation / single-shot learned solvers** — those that emit one (soft) assignment and decode it (OptGNN,
+HyperSAT, ErdosGNN; on Max-k-Cut also ROS, EGN). A stronger, *separate* category is **iterative-search**
+solvers, which run an anytime stochastic search over assignments: classical (WalkSAT, Survey Propagation,
+MOH, tabu) and learned (ANYCSP, X2GNN, and diffusion samplers like DiffUCO/SDDS). These lead, and we do not
+claim to beat them. This relaxation-vs-search split is the single mechanism that explains our whole map:
+we win exactly where the published SOTA is a relaxation method (Max-SAT) and are mid-pack wherever it is a
+search method (Max-k-Cut → ANYCSP/MOH; graph CO → diffusion).
 
 ## 5. Reproducibility
 
