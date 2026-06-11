@@ -1182,3 +1182,11 @@ SAME metric (cut value, higher=better). Our unsupervised softmax-k relaxation + 
 (memetic heuristic). Honest verdict: MID-PACK, NOT better. Confirms the niche criterion: here the learned
 SOTA (ANYCSP) is NOT imperfect -> we don't win (same as other graph problems MDS/MVC/MaxClique). Code:
 experiments/e108_max3cut_ros.py (Gset Max-3-Cut, reproducible on G14/G15/G22).
+
+## E109 — Max-3-Cut on random regular graphs vs ROS Table 2 (k=3, N=100) -- mid-pack (2nd benchmark)
+Reproducible: 20 each of 3/5/7-regular, N=100 (ROS test = 60 graphs). avg cut value (higher=better).
+OURS: 3-reg 149.85, 5-reg 239.75, 7-reg 322.95, overall 237.52.
+ROS Table 2 k=3 N=100: MD/Genetic 235.50, BQP 239.70, ROS 240.30, ANYCSP 247.90(best).
+=> OURS 237.52: beat MD/Genetic, ~= BQP/ROS (relaxation methods), BEHIND ANYCSP (learned SEARCH). MID-PACK,
+same as Gset (E108). Confirms relaxation-vs-search mechanism on a 2nd Max-3-Cut benchmark: we match the
+relaxation methods (BQP/ROS), lose to the search method (ANYCSP). Code: experiments/e109_max3cut_regular.py.
