@@ -13,6 +13,7 @@ same metric** (no fabricated comparisons; no comparison to our own tabu/SA).
 | Min Dominating Set | BA, DiffUCO/SDDS | ~2–3% behind diffusion SOTA; beats EGN/LTFT | mid-pack |
 | Min Vertex Cover | RB, DiffUCO | ~2.4% behind | mid-pack |
 | Maximum Clique | RB, DiffUCO/X2GNN | behind diffusion; beats EGN | mid-pack |
+| **Max-3-Cut** (k=3, NOT k=2 MaxCut) | Gset, **ROS** 2024 Tab.7 | ~ROS; behind ANYCSP+MOH | mid-pack (E108) |
 | SK spin glass | dim128, tabu/SA | +1.1% | competitive (no paper#) |
 | NAE-3SAT | random, tabu | 97% clauses | competitive (no paper#) |
 | Modularity / community | SBM, Louvain | Q 0.03 vs 0.51 | ❌ fail (needs clustering arch) |
