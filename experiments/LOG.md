@@ -1190,3 +1190,15 @@ ROS Table 2 k=3 N=100: MD/Genetic 235.50, BQP 239.70, ROS 240.30, ANYCSP 247.90(
 => OURS 237.52: beat MD/Genetic, ~= BQP/ROS (relaxation methods), BEHIND ANYCSP (learned SEARCH). MID-PACK,
 same as Gset (E108). Confirms relaxation-vs-search mechanism on a 2nd Max-3-Cut benchmark: we match the
 relaxation methods (BQP/ROS), lose to the search method (ANYCSP). Code: experiments/e109_max3cut_regular.py.
+
+## E110 — Densest-k-Subgraph on SNAP Facebook (n=4039, m=88234) vs greedy baselines -- competitive/mid-pack
+Benchmark from arXiv:2410.07388 (Facebook DkS k=20). Metric: #edges in best k-subset (higher=better).
+Our QUBO-DkS relaxation (max edges - cardinality penalty) + swap LS, vs standard greedy DkS heuristics.
+| k | OURS | greedy-grow | greedy-peel | clique-max |
+| 10 | 45 | 27 | 45 | 45 | OURS=OPTIMAL (10-clique)
+| 20 | 190 | 75 | 190 | 190 | OURS=OPTIMAL (20-clique)
+| 30 | 398 | 149 | 435 | 435 | behind greedy-peel
+=> Facebook DkS reduces to clique-finding (densest = clique). OURS matches OPTIMUM at k<=20, behind greedy-
+peel at k=30 (swap-LS stuck). We crush greedy-grow (weak), match the strong greedy-peel at small k. Verdict:
+competitive/mid-pack -- greedy-peel (iterative peeling = search) is strong here, consistent with the mechanism.
+Code: experiments/e110_dks_facebook.py (SNAP Facebook, reproducible).
