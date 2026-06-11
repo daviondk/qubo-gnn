@@ -1202,3 +1202,13 @@ Our QUBO-DkS relaxation (max edges - cardinality penalty) + swap LS, vs standard
 peel at k=30 (swap-LS stuck). We crush greedy-grow (weak), match the strong greedy-peel at small k. Verdict:
 competitive/mid-pack -- greedy-peel (iterative peeling = search) is strong here, consistent with the mechanism.
 Code: experiments/e110_dks_facebook.py (SNAP Facebook, reproducible).
+
+## E111 — Number Partitioning vs Karmarkar-Karp -- CLEAR LOSS (frustrated dense QUBO = our weakness)
+Random NPP, discrepancy |sum +-a_i| (lower=better). Our QUBO-GNN on (sum s_i a_i)^2 + 1-flip vs KK (standard).
+| N | OURS | KK | OPT |
+| 20 | 7822 | 975 | 5.8 |  (8x worse than KK, 1300x worse than optimal)
+| 40 | 674315 | 2954 | - |  (228x worse than KK -- gap explodes)
+=> NPP is a CLEAR LOSS, gap widens with N. The (sum s_i a_i)^2 energy is fully frustrated / dense; our
+relaxation cannot navigate it, while KK's differencing is purpose-built. Same failure class as modularity,
+LABS, constrained portfolio (E12). Confirms: frustrated dense QUBOs are the method's hard weakness, NOT just
+mid-pack. Code: experiments/e111_npp.py.
