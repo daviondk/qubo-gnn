@@ -72,6 +72,17 @@ facility-location problems are "false-hard" for learning, exactly like cardinali
 family — which we already win. The remaining list problems fail condition (1) (greedy-dominated), (2) (strong
 diffusion/physics SOTA), or (3) (in QIGNN). This is why the search converges.
 
+## SAT-optimization arena — exhaustively checked (only OptGNN + HyperSAT give clean comparable tables)
+Every learned-MaxSAT paper found was examined; only two report avg-(weighted-)unsatisfied-clause tables on
+standard/distribution-matched instances — and we beat both. The rest are non-comparable by metric or data:
+- **DeepSP** (Marino, arXiv:2012.06344): metric = accuracy of reproducing Survey-Propagation marginals,
+  tested at `N=10⁴`, `α=4.23`; not an avg-unsat comparison.
+- **Understanding GNNs for SAT via Approximation** (arXiv:2408.15418, 2024): metric = number of *satisfiable*
+  problems solved (decision SAT + decimation), not MaxSAT objective.
+- **SAT-decision GNNs** (NeuroSAT, SAT-GATv2, MILP-SAT-GNN, G4SATBench): satisfiability-prediction accuracy.
+- **SplitGNN / RUN-CSP**: custom unreleased generators / plot-only numbers (see above).
+=> The cleanly-comparable, winnable learned-MaxSAT arena is exhausted by the two wins.
+
 ## Conclusion of the perebor
 The method's genuine, defensible niche is **(weighted) Max-SAT, best-in-class among learned/unsupervised
 solvers** (two independent same-data/same-metric wins: HyperSAT, OptGNN — see `33_maxsat_writeup.md`). On
