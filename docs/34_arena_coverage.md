@@ -16,6 +16,8 @@ same metric** (no fabricated comparisons; no comparison to our own tabu/SA).
 | **Max-3-Cut** (k=3, NOT k=2 MaxCut) | Gset, **ROS** 2024 Tab.7 | ~ROS; behind ANYCSP+MOH | mid-pack (E108) |
 | SK spin glass | dim128, tabu/SA | +1.1% | competitive (no paper#) |
 | NAE-3SAT | random, tabu | 97% clauses | competitive (no paper#) |
+| **Densest-k-Subgraph** | SNAP Facebook, greedy-peel | **OPTIMAL at k≤20** (ties greedy-peel), behind k=30 | competitive (E110) |
+| **Number Partitioning** | random, Karmarkar-Karp | 8×–228× worse than KK | ❌ clear loss (E111) |
 | Modularity / community | SBM, Louvain | Q 0.03 vs 0.51 | ❌ fail (needs clustering arch) |
 | LABS | N=20, best-known | +61% | ❌ fail (specialized) |
 | Constrained portfolio | QOBLIB | can't reach quality | ❌ boundary (penalty ill-conditions QUBO) |
@@ -99,6 +101,17 @@ standard/distribution-matched instances — and we beat both. The rest are non-c
 - **SAT-decision GNNs** (NeuroSAT, SAT-GATv2, MILP-SAT-GNN, G4SATBench): satisfiability-prediction accuracy.
 - **SplitGNN / RUN-CSP**: custom unreleased generators / plot-only numbers (see above).
 => The cleanly-comparable, winnable learned-MaxSAT arena is exhausted by the two wins.
+
+### Three tiers by energy landscape (the full live-run picture)
+Combining the relaxation-vs-search mechanism with the energy structure gives a clean 3-tier map, each tier
+confirmed by live runs:
+1. **WIN** — clean low-order energy **and** published SOTA is a *relaxation* method: Max-SAT (E105/E106).
+2. **MID-PACK** — clean low-order energy but SOTA is a *search* method: Max-3-Cut (E108/E109), MDS/MVC/
+   MaxClique, Densest-k-Subgraph (E110, optimal at small k, ties strong greedy).
+3. **CLEAR LOSS** — *frustrated / dense* energy our relaxation cannot navigate: Number Partitioning (E111,
+   8–228× worse than Karmarkar-Karp), modularity, LABS, constrained portfolio. Here even our local search
+   can't rescue the relaxation; a purpose-built heuristic (KK, Louvain) dominates.
+The method's home is Tier-1; it is respectable in Tier-2 and should not be used in Tier-3.
 
 ## Conclusion of the perebor
 The method's genuine, defensible niche is **(weighted) Max-SAT, best-in-class among learned/unsupervised
