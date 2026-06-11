@@ -1252,3 +1252,13 @@ unsat at the phase transition, which our relaxation + DETERMINISTIC greedy 1-fli
 unsat away; escaping needs WalkSAT-style noise = a stronger/"more complex" search). So: we are strong at
 MINIMIZING violations, weak at FULLY SOLVING. The SAT win is metric-specific (minimization), not a full-solve
 claim. Code: experiments/e115_randcsp.py.
+
+## E116 — QAP on QAPLIB -- NOT a genuine method win (the 2-opt LS does it, not the GNN)
+QAP (assignment/permutation, NOT in QIGNN). Our GNN-relaxation + Hungarian + 2-opt LS: gap to best-known
+0.1-6.7% on chr12a/nug12/rou12/nug20/had20/tai15a -> looks like it BEATS DL-GNN methods (Two-Stage GPN 9-30%).
+HONESTY ABLATION (random-permutation-start + 2-opt ONLY, no GNN): gaps 11.2/1.4/0.1/1.9/0.4/1.6% -- COMPARABLE
+to or BETTER than GNN+2opt (random+2opt wins on rou12/nug20/tai15a). => The 2-opt local search carries the
+result; our GNN-relaxation adds little and sometimes HURTS. QAP is frustrated (assignment) -> our relaxation
+is useless here (same class as NPP), and the standard 2-opt heuristic is what beats the (weak) DL-GNN methods.
+NOT a genuine win for our method. (Contrast: on SAT the ablation showed GNN-init IS essential.) Code:
+experiments/e116_qap.py + e116b_ablation.
