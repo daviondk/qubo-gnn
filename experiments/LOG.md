@@ -1159,3 +1159,14 @@ Results (e106 50inst / e106b 60inst):
 ErdosGNN by ~2). Specialized classical SAT solvers (WalkSAT, Survey Propagation) still lead. Consistent
 with our weighted-MaxSAT win vs HyperSAT -> SAT/CSP is our method's strong domain. Code: experiments/
 e106_max3sat_optgnn.py (gen_3sat + solve), e106b_max3sat_pure.py. Reproducible: seed=int(r*100).
+
+## E107 — SplitGNN (weighted MaxSAT, arXiv 2511.19544, Nov 2025) — INVALID ARENA, discarded (not a result)
+Tried to compare on SplitGNN Table 2 (WUF(2,60,600) dObj=26.493, WUF(3,60,600)=134.746). Their instances use
+CUSTOM non-standard generators (WUF/WPL/WPS/WDP) not released / not reproducible from the paper. My uniform-
+random reproduction at ratio m/n=10 gave dObj~3594 (137x their 26.493) -> clearly a DISTRIBUTION mismatch
+(their WUF are near-satisfiable structured/planted, mine deeply-unsat uniform-random). Per methodology
+(same data required), this is NOT a valid comparison -> DISCARDED, not recorded as a win/loss. e107 code kept
+local only (not pushed) to avoid a misleading number in the public repo.
+LESSON: valid reproducible SAT wins use STANDARD public benchmarks: HyperSAT (SATLIB uf/uuf, W~U[1,10]) and
+OptGNN (random 3-SAT at fixed ratio). Custom-generator papers (SplitGNN, RUN-CSP tNpm3, Lightsolver) are not
+reproducibly comparable from the paper alone.
