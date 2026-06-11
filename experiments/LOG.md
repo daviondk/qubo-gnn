@@ -1170,3 +1170,15 @@ local only (not pushed) to avoid a misleading number in the public repo.
 LESSON: valid reproducible SAT wins use STANDARD public benchmarks: HyperSAT (SATLIB uf/uuf, W~U[1,10]) and
 OptGNN (random 3-SAT at fixed ratio). Custom-generator papers (SplitGNN, RUN-CSP tNpm3, Lightsolver) are not
 reproducibly comparable from the paper alone.
+
+## E108 — Max-3-Cut on Gset vs ROS (arXiv:2412.05146, Table 7) -- MID-PACK, not a win (valid measurement)
+Max-3-Cut (k=3 partition) is a DISTINCT problem from k=2 MaxCut (QIGNN). SAME data (standard public Gset),
+SAME metric (cut value, higher=better). Our unsupervised softmax-k relaxation + node-move local search.
+| inst | OURS | ROS | ANYCSP | MOH(best) | verdict |
+| G14 | 3855 | 3892 | 3973 | 4012 | behind |
+| G15 | 3846 | 3838 | 3975 | 3984 | beat ROS only |
+| G22 | 16561 | 16601 | 17098 | 17167 | behind |
+=> We are ~ROS level (a weak learned baseline) but BEHIND ANYCSP (strong recurrent-GNN CSP solver) and MOH
+(memetic heuristic). Honest verdict: MID-PACK, NOT better. Confirms the niche criterion: here the learned
+SOTA (ANYCSP) is NOT imperfect -> we don't win (same as other graph problems MDS/MVC/MaxClique). Code:
+experiments/e108_max3cut_ros.py (Gset Max-3-Cut, reproducible on G14/G15/G22).
