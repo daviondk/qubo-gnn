@@ -1239,3 +1239,16 @@ optimum (linearized MIQP via SCIP), lower=better.
 break us (unlike the portfolio EQUALITY constraints which ill-condition the QUBO) -> inequality-constrained
 packing is fine. A solid not-in-paper result: method extends to QKP, near-optimal. Tier-2 (near-opt, ~greedy).
 Code: experiments/e113_qkp.py.
+
+## E115 — K-SAT vs RandCSPBench (arXiv:2602.18419, 2026, Angelini/Bocconi) -- WE FAIL on the SCORE metric
+RandCSPBench: hard random K-SAT at the phase transition, N=256, metric SCORE = % of satisfiable instances
+FULLY SOLVED (0 unsat), higher=better. NOT in QIGNN (K-SAT). Paper's GNN baselines: NeuroSAT 84.48,
+QuerySAT 92.38; classical FMS 99.98 (3-SAT). Our unsup. relaxation + greedy 1-flip, alpha~U[3,5].
+Result (sample): OUR Score ~0% (0/10 satisfiable solved); WalkSAT 10/10. => WE FAIL, far below even the GNN
+baselines.
+KEY HONEST INSIGHT: our HyperSAT/OptGNN WINS were on the AVG-#UNSAT (MaxSAT *minimization*) metric -- being
+close (3.37) beats the competitor (4.46). RandCSPBench uses the FULL-SOLVE *Score* metric -- needs exactly 0
+unsat at the phase transition, which our relaxation + DETERMINISTIC greedy 1-flip cannot reach (stalls a few
+unsat away; escaping needs WalkSAT-style noise = a stronger/"more complex" search). So: we are strong at
+MINIMIZING violations, weak at FULLY SOLVING. The SAT win is metric-specific (minimization), not a full-solve
+claim. Code: experiments/e115_randcsp.py.
