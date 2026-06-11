@@ -20,6 +20,7 @@ same metric** (no fabricated comparisons; no comparison to our own tabu/SA).
 | NAE-3SAT | random, tabu | 97% clauses | competitive (no paper#) |
 | **Densest-k-Subgraph** | SNAP Facebook, greedy-peel | **OPTIMAL at k≤20** (ties greedy-peel), behind k=30 | competitive (E110) |
 | **Number Partitioning** | random, Karmarkar-Karp | 8×–228× worse than KK | ❌ clear loss (E111) |
+| **QAP** (assignment) | QAPLIB, DL-GNN (Two-Stage GPN 9–30%) | gap 0.1–6.7% (looks like beats DL-GNN) | ❌ **NOT a method win** — ablation: 2-opt LS does it, GNN adds nothing (E116; frustrated like NPP) |
 | Modularity / community | SBM, Louvain | Q 0.03 vs 0.51 | ❌ fail (needs clustering arch) |
 | LABS | N=20, best-known | +61% | ❌ fail (specialized) |
 | Constrained portfolio | QOBLIB | can't reach quality | ❌ boundary (penalty ill-conditions QUBO) |
