@@ -1212,3 +1212,17 @@ Random NPP, discrepancy |sum +-a_i| (lower=better). Our QUBO-GNN on (sum s_i a_i
 relaxation cannot navigate it, while KK's differencing is purpose-built. Same failure class as modularity,
 LABS, constrained portfolio (E12). Confirms: frustrated dense QUBOs are the method's hard weakness, NOT just
 mid-pack. Code: experiments/e111_npp.py.
+
+## E112 — Graph Min-Bisection on Gset vs Kernighan-Lin + spectral -- MIXED (Tier-2 dense, fail structured)
+Partition into 2 equal halves, minimize cut (lower=better). Our QUBO relaxation + balanced swap LS vs KL
+(networkx, 1970 standard) + spectral (Fiedler).
+| Gset | OURS | KL | spectral |
+| G14 (800,dense) | 1162 | 1200 | 1240 | BEAT KL+spectral
+| G15 (800,dense) | 1181 | 1177 | 1247 | ~KL (-4)
+| G22 (2000,dense) | 7032 | 6832 | 8292 | slightly behind KL
+| G49 (3000,toroidal) | 556 | 104 | 60 | FAIL (structured)
+| G50 (3000,toroidal) | 632 | 54 | 50 | FAIL (structured)
+=> On DENSE random graphs: competitive, even BEAT KL on G14. On STRUCTURED toroidal graphs (G49/G50):
+catastrophic fail -- spectral/KL exploit global structure to find ~50-cut, our local relaxation+swap gets
+stuck at ~600. Verdict: Tier-2 on dense (~KL), but a structured-graph blind spot (like our clustering fail).
+Code: experiments/e112_bisection.py.
