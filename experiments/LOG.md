@@ -1226,3 +1226,16 @@ Partition into 2 equal halves, minimize cut (lower=better). Our QUBO relaxation 
 catastrophic fail -- spectral/KL exploit global structure to find ~50-cut, our local relaxation+swap gets
 stuck at ~600. Verdict: Tier-2 on dense (~KL), but a structured-graph blind spot (like our clustering fail).
 Code: experiments/e112_bisection.py.
+
+## E113 — Quadratic Knapsack (QKP) vs exact (SCIP) + greedy -- NEAR-OPTIMAL (genuinely NOT in QIGNN)
+QKP = max sum p_i x_i + sum P_ij x_i x_j s.t. sum w_i x_i <= C. Packing w/ capacity, NOT a graph cut/selection
+problem -> clearly outside QIGNN (MaxCut/MIS/Coloring). Billionnet-Soutif-style random, metric = gap to exact
+optimum (linearized MIQP via SCIP), lower=better.
+| n,density | OUR gap | greedy gap |
+| 60,0.25 | 0.72% | 0.75% | beat greedy
+| 60,0.5  | 0.88% | 1.45% | beat greedy
+| 80,0.5  | 1.14% | 0.93% | ~greedy
+=> OUR QUBO-GNN within ~1% of exact optimum, beats greedy on 2/3. The capacity INEQUALITY constraint does NOT
+break us (unlike the portfolio EQUALITY constraints which ill-condition the QUBO) -> inequality-constrained
+packing is fine. A solid not-in-paper result: method extends to QKP, near-optimal. Tier-2 (near-opt, ~greedy).
+Code: experiments/e113_qkp.py.
