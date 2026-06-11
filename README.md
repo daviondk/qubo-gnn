@@ -47,6 +47,7 @@ exact sources and how each instance set is produced.
 - [docs/26_research_roadmap.md](docs/26_research_roadmap.md) — research roadmap.
 
 **General CO & SAT — SOTA comparison (the main results)**
+- ⭐ [docs/33_maxsat_writeup.md](docs/33_maxsat_writeup.md) — **headline write-up**: unsupervised GNN-QUBO is best-in-class among learned solvers on Max-SAT (beats HyperSAT + OptGNN), with tables, ablation, reproducibility.
 - [docs/30_sota_benchmarks.md](docs/30_sota_benchmarks.md) — SOTA benchmark tables + our standing (MDS / MaxClique / MVC / SK / MaxSAT).
 - [docs/29_benchmarking_on_their_metrics.md](docs/29_benchmarking_on_their_metrics.md) — comparing on competitors' own metrics.
 - [docs/27_sota_methodology_and_direct_comparison.md](docs/27_sota_methodology_and_direct_comparison.md) — methodology for direct, same-data comparison.
