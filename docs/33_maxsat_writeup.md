@@ -109,6 +109,17 @@ search method (Max-k-Cut → ANYCSP/MOH; graph CO → diffusion).
   Papers whose benchmarks use unreleased custom generators (e.g. SplitGNN's WUF/WPL/WPS, RUN-CSP's structured
   `tNpm3`) are not reproducibly comparable from the text and are excluded (see `experiments/LOG.md`, E107).
 
+## 5b. Scope of the metric (important caveat)
+
+Our wins are on the **average-(weighted-)unsatisfied-clauses** metric — the *optimization / minimization*
+objective that HyperSAT and OptGNN report. They are **not** claims on the *full-solve* (decision) metric.
+On **RandCSPBench** (Angelini/Bocconi, arXiv:2602.18419, 2026), which scores the fraction of phase-transition
+instances **fully solved** (exactly 0 unsatisfied), our relaxation + deterministic 1-flip scores ≈0% — far
+below both the learned baselines (NeuroSAT 84.5, QuerySAT 92.4) and classical search (FMS 99.98), because the
+deterministic decoder stalls a few clauses short of a satisfying assignment and lacks the stochastic-walk
+moves needed to escape. **So the method is a strong constraint-violation *minimizer*, not a complete *solver*.**
+The Max-SAT result should be read as: best relaxation-based learned *optimizer* on the avg-unsat metric.
+
 ## 6. Limitations and future work
 
 (i) On the largest SATLIB sets (250 vars) we trail HyperSAT — tuning the number of restarts / refinement
