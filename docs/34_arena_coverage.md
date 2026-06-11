@@ -12,8 +12,10 @@ same metric** (no fabricated comparisons; no comparison to our own tabu/SA).
 | **Max-3-SAT (random)** | N=100 r∈{4.0,4.15,4.3}, **OptGNN** Tab.2 | beat OptGNN+ErdosGNN, all ratios | 🏆 **WIN** |
 | Min Dominating Set | BA, DiffUCO/SDDS | ~2–3% behind diffusion SOTA; beats EGN/LTFT | mid-pack |
 | Min Vertex Cover | RB, DiffUCO | ~2.4% behind | mid-pack |
-| Maximum Clique | RB, DiffUCO/X2GNN | behind diffusion; beats EGN | mid-pack |
-| **Max-3-Cut** (k=3, NOT k=2 MaxCut) | Gset, **ROS** 2024 Tab.7 | ~ROS; behind ANYCSP+MOH | mid-pack (E108) |
+| Maximum Clique | RB, DiffUCO/X2GNN | behind diffusion; beats EGN | mid-pack ⚠️=MIS-complement (paper-adjacent) |
+| Max-3-Cut (k=3) | Gset, **ROS** 2024 Tab.7 | ~ROS; behind ANYCSP+MOH | mid-pack (E108) ⚠️ cut-family (close to paper's Max-Cut) |
+| Min-Bisection | Gset, KL+spectral | beat KL on G14; fail toroidal | mixed (E112) ⚠️ cut-family (close to paper's Max-Cut) |
+| **Quadratic Knapsack** (packing+capacity) | random, exact(SCIP)+greedy | within ~1% of optimum, beats greedy 2/3 | competitive, NOT in paper (E113) |
 | SK spin glass | dim128, tabu/SA | +1.1% | competitive (no paper#) |
 | NAE-3SAT | random, tabu | 97% clauses | competitive (no paper#) |
 | **Densest-k-Subgraph** | SNAP Facebook, greedy-peel | **OPTIMAL at k≤20** (ties greedy-peel), behind k=30 | competitive (E110) |
