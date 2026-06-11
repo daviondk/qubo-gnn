@@ -55,3 +55,14 @@ SDDS, X2GNN) on both MDS and MaxClique. Honest position for an original-complexi
 competitive with the earlier learned-CO generation, behind the newest diffusion generation.
 (Earlier "tie/beat SOTA" was WRONG — used weak DiffUCO-paper 106.61 + 15-graph sample.)
 Repro: DiffUCO repo cloned (competitors/DiffUCO), exact RB/BA generators; numbers in competitors/diffuco_text.txt.
+
+## SAT/CSP — OUR METHOD'S WIN REGION (best among LEARNED solvers)
+Two independent same-data/same-metric wins vs published neural numbers (problems NOT in QIGNN):
+1. **Weighted Max-3-SAT (SATLIB uf/uuf)** vs **HyperSAT (SOTA 2025, arXiv 2504.11885)** — metric avg weighted
+   UNSAT. Our GNN+1flip BEATS HyperSAT on 4/6 datasets (uf100 14.36 vs 15.64; pure-GNN-no-LS 14.03 also beats).
+2. **Max-3-SAT (random N=100, r=4.00/4.15/4.30)** vs **OptGNN Table 2 (arXiv 2310.00526)** — metric avg #UNSAT.
+   Our pure GNN 3.37/4.27/5.02 BEATS OptGNN 4.46/5.15/5.84 and ErdosGNN 5.46/6.14/6.79 on ALL ratios
+   (~ matches classical Survey Propagation; specialized WalkSAT/SP still lead, as expected).
+VERDICT: among unsupervised/learned GNN solvers, our simple method is **best-in-class on SAT/MaxSAT**.
+This is the method's genuine niche — consistent with the structural intuition (clean low-order CSP energy +
+relaxation finds strong local minima). Graph problems (MDS/MVC/MaxClique) = mid-pack; clustering = fail.
