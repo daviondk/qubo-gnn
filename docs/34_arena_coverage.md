@@ -44,6 +44,34 @@ persistent gap between ML-based solvers and human-designed classical SOTA across
 realistic target for any learned solver is to be **best among learned solvers** on a problem family — which is
 exactly what we demonstrate on Max-SAT.
 
+## Structural criterion — *why* SAT is the niche (and where to stop looking)
+
+A learned solver can only **win** on a problem that is simultaneously:
+1. **greedy-weak** — simple greedy / local construction is *far* from optimal (otherwise greedy already wins);
+2. **learned-SOTA-imperfect** — the published learned baselines leave room (otherwise they win);
+3. **not in QIGNN** — Max-Cut / MIS / coloring are off-limits as a *new* result;
+4. a clean low-order energy our relaxation can optimize.
+
+Mapping the candidates against this:
+
+| problem | greedy-weak? | learned-SOTA imperfect? | not in QIGNN? | result |
+| :-- | :-- | :-- | :-- | :-- |
+| **Max-SAT (phase transition)** | ✅ (needs WalkSAT) | ✅ (OptGNN/HyperSAT imperfect) | ✅ | 🏆 **win** |
+| Max-Cut / MIS / coloring | ✅ | — | ❌ excluded | — |
+| Maximum Clique | ✅ | ❌ (diffusion SOTA strong) | ✅ | mid-pack |
+| Spin glass / Ising | ✅ | ❌ (physics solvers near-opt) | ✅ | competitive, not better |
+| **Max coverage / facility location / set cover** | ❌ **greedy ≈ 0.99–1.00 ≈ Gurobi** | — | ✅ | not winnable (greedy-dominated) |
+| Constrained portfolio | ❌ (greedy/exact strong) | — | ✅ | boundary (also ill-conditioned) |
+
+Concrete evidence for the "greedy-dominated" row: on **maximum coverage** (Bu et al. 2024, arXiv:2405.08424,
+Table 2) plain **greedy scores 0.99** of the Gurobi-optimal objective across rand500/rand1000/twitch/railway —
+i.e. essentially optimal — so *no* learned method (theirs, EGN, or ours) can beat it. Submodular-coverage and
+facility-location problems are "false-hard" for learning, exactly like cardinality portfolio.
+
+**Implication:** the intersection of all four conditions is essentially the **SAT/CSP-at-phase-transition**
+family — which we already win. The remaining list problems fail condition (1) (greedy-dominated), (2) (strong
+diffusion/physics SOTA), or (3) (in QIGNN). This is why the search converges.
+
 ## Conclusion of the perebor
 The method's genuine, defensible niche is **(weighted) Max-SAT, best-in-class among learned/unsupervised
 solvers** (two independent same-data/same-metric wins: HyperSAT, OptGNN — see `33_maxsat_writeup.md`). On
