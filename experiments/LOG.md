@@ -1144,3 +1144,18 @@ NICHE: weighted MaxSAT is unsupervised-NN territory (HyperSAT=hypergraph-NN); ou
 | uuf250-1065 | 42.68 | 41.64 | 100.04 | 182.39 | behind 2.5%
 => OUR simple GNN BEATS 2025 SOTA HyperSAT on 4/6 (all 100+200-var), behind on largest 250-var. Pure-GNN
 (no LS) 14.03 also beats HyperSAT on uf100. All crush Liu/HypOp baselines. Honest scale-degradation at 250.
+
+## E106 — Max-3-SAT (random N=100) vs OptGNN Table 2 (arXiv 2310.00526) -- BEAT the neural methods
+Target: OptGNN "Are GNNs Optimal Approximation Algorithms?" Table 2. SAME setup: random 3-SAT, N=100 vars,
+clause ratio r in {4.00,4.15,4.30} (M=r*N clauses). SAME metric: avg # UNSATISFIED clauses (lower=better).
+NOT in QIGNN. Fully reproducible (random 3-SAT, seeded; no download). Our unsupervised GNN-relaxation,
+PURE GNN (no LS) = fair vs OptGNN (learned, randomized-rounding).
+Results (e106 50inst / e106b 60inst):
+| r | OUR pure GNN | OptGNN | ErdosGNN | SurveyProp | WalkSAT(100) |
+| 4.00 | 3.37 | 4.46 | 5.46 | 3.32 | 0.14 | -> BEAT OptGNN+ErdosGNN, ~ SurveyProp
+| 4.15 | 4.27 | 5.15 | 6.14 | 3.87 | 0.36 | -> BEAT OptGNN+ErdosGNN
+| 4.30 | 5.02 | 5.84 | 6.79 | 3.94 | 0.68 | -> BEAT OptGNN+ErdosGNN
+=> Among LEARNED/NEURAL methods our simple GNN is BEST on Max-3-SAT (beats OptGNN by ~0.8-1.1 clauses,
+ErdosGNN by ~2). Specialized classical SAT solvers (WalkSAT, Survey Propagation) still lead. Consistent
+with our weighted-MaxSAT win vs HyperSAT -> SAT/CSP is our method's strong domain. Code: experiments/
+e106_max3sat_optgnn.py (gen_3sat + solve), e106b_max3sat_pure.py. Reproducible: seed=int(r*100).
